@@ -5,13 +5,14 @@ body {
     width: 100vw;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
     }
     
     .header{
     Display: flex;
     flex-flow: row nowrap;
     Justify-content: space-between;
-    Padding: 16px 60px 16px 60px;
+    Padding: 16px 15vw 16px 15vw;
     background-color: #1F2937;
     }
     
@@ -29,16 +30,18 @@ body {
     Gap: 20px;
     font-size: 18px;
     color: #E5E7EB;
-
     }
     
+    .header-links li:hover {
+        color:#3882f6;
+    }
+
     .welcome-container {
     Display: flex;
-    Align-items: center;
-    Justify-content: center;
-    gap: 16px;
     background-color: #1F2937;
-    padding: 20px 12vw 70px 12vw;
+    padding: 20px 15vw 70px 15vw;
+    gap: 10px;
+    margin: 0px;
     }
     
     .welcome-content {
@@ -47,45 +50,80 @@ body {
     flex-wrap: wrap;
     width: 50%;
     padding: 0px;
+    margin: 0px;
+    gap: 10px;
     }
 
     .welcome-content h1 {
         font-size: 48px;
         font-weight: bolder;
         color: #F9FAF8;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.20);
+        margin: 0px;
     }
 
     .welcome-content p {
         font-size: 18px;
         color: #E5E7EB;
+        margin: 0px;
     }
 
     .welcome-content button {
         display: flex;
         justify-content: center;
-        Padding: 8px 16px 8px 16px;
+        align-self: flex-start;
+        Padding: 8px 40px 8px 40px;
+        background-color: #3882f6;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        box-shadow: -4px -4px 6px #00000021 inset;
+    }
+
+    .welcome-content button:hover {
+        background-color: white;
+        color:#3882f6
+    }
+
+    .welcome-content button:active {
+        background-color: #E5E7EB;
     }
 
     .welcome-container img {
         width: 50%;
         height: auto;
-        border: medium solid red;
+        display: flex;
+        align-self: stretch;
+        background-color: #969696;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color:#E5E7EB;
     }
     
     .services {
     Display: flex;
     Flex-direction: column;
     Align-items: center;
+    padding: 0px 15vw 0px 15vw;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.20) inset;
     }
 
     .services img {
+        display: flex;
         width: 100px;
         height: 100px;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         text-align: center;
         border: medium solid #3882f6;
         border-radius: 12px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.20);
+    }
+
+    .services img:hover{
+        background-color: #969696;
+     
     }
     
     .service-cards {
@@ -93,6 +131,7 @@ body {
     Justify-content: space-around;
     Margin: 16px;
     }
+
     
     .card-1, .card-2, .card-3, .card-4 {
     Display: flex;
@@ -103,14 +142,16 @@ body {
     
     .testimonial {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column;
+        justify-content: stretch;
         background-color: #E5E7EB;
         color:#1F2937;
         font-size: 36px;
         font-style: italic;
         align-items: center;
-        padding: 20px 20px 20px 20px;
-        margin: 0px;
+        padding: 20px 15vw 20px 15vw;
+        margin: auto;
+
     }
 
     .testimonial-signature {
@@ -120,7 +161,7 @@ body {
         align-self:flex-end;
         padding-right: 60px;
         padding-top: 0px;
-        margin-top: -15px;
+        margin-top: -30px;
     }
 
     .footer{
@@ -129,8 +170,61 @@ body {
         background-color: #1F2937;
         color:#E5E7EB;
         width: 100vw;
+        padding: 10px 0px 10px 0px;
         }
 
     .call-to-action {
-        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 15vw 20px 15vw;
+    }
+
+    .cta-container {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8vw 20px 8vw;
+        background-color: #3882f6;
+        border-radius: 12px;
+        box-shadow: -4px -4px 6px #00000021 inset;
+        width: 70vw;
+    }
+
+    .cta-text {
+        display:flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        color:#F9FAF8;
+    }
+    .cta-text h1 {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .cta-text p {
+        margin: 0px;
+    }
+
+    .cta-container button {
+        display: flex;
+        justify-self: flex-end;
+        background-color: #3882f6;
+        border: 2px solid white;
+        border-radius: 6px;
+        color: #F9FAF8;
+        font-size: 14px;
+        Padding: 4px 20px 5px 20px;
+        box-shadow: -4px -4px 6px #00000021 inset;
+    }
+
+    .cta-container button:hover {
+        background-color: white;
+        color:#3882f6
+    }
+
+    .cta-container button:active {
+        background-color: #E5E7EB;
     }
