@@ -1,0 +1,136 @@
+body {
+    Display: flex;
+    Flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header{
+    Display: flex;
+    flex-flow: row nowrap;
+    Justify-content: space-between;
+    Padding: 16px 60px 16px 60px;
+    background-color: #1F2937;
+    }
+    
+    .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+
+    }
+
+    .header-links {
+    Display: flex;
+    List-style-type: none;
+    Padding: 0px;
+    Margin: 0px;
+    Gap: 20px;
+    font-size: 18px;
+    color: #E5E7EB;
+
+    }
+    
+    .welcome-container {
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    gap: 16px;
+    background-color: #1F2937;
+    padding: 20px 12vw 70px 12vw;
+    }
+    
+    .welcome-content {
+    Display: flex;
+    Flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0px;
+    }
+
+    .welcome-content h1 {
+        font-size: 48px;
+        font-weight: bolder;
+        color: #F9FAF8;
+    }
+
+    .welcome-content p {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+
+    .welcome-content button {
+        display: flex;
+        justify-content: center;
+        Padding: 8px 16px 8px 16px;
+    }
+
+    .welcome-container img {
+        width: 50%;
+        height: auto;
+        border: medium solid red;
+    }
+    
+    .services {
+    Display: flex;
+    Flex-direction: column;
+    Align-items: center;
+    }
+
+    .services img {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border: medium solid #3882f6;
+        border-radius: 12px;
+    }
+    
+    .service-cards {
+    Display: Flex;
+    Justify-content: space-around;
+    Margin: 16px;
+    }
+    
+    .card-1, .card-2, .card-3, .card-4 {
+    Display: flex;
+    Flex-direction: column;
+    Padding: 16px;
+    Margin: 8px;
+    }
+    
+    .testimonial {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: #E5E7EB;
+        color:#1F2937;
+        font-size: 36px;
+        font-style: italic;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+        margin: 0px;
+    }
+
+    .testimonial-signature {
+        font-weight: bold;
+        font-size: 24px;
+        font-style:normal;
+        align-self:flex-end;
+        padding-right: 60px;
+        padding-top: 0px;
+        margin-top: -15px;
+    }
+
+    .footer{
+        Display: flex;
+        Justify-content: center;
+        background-color: #1F2937;
+        color:#E5E7EB;
+        width: 100vw;
+        }
+
+    .call-to-action {
+        padding: 20px;
+    }
